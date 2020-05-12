@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NopCommerceTest">
+
+
+	<listeners>
+		<listener
+			class-name="com.nop.qa.ExtentReportsListener.ExtentReporterNG"></listener>
+
+		<listener class-name="com.nop.qa.util.TestTransformer"></listener>
+	</listeners>
+	<test name="NopCommerce App Test">
+		<classes>
+			<class name="com.nop.qa.testcases.ProductsPageTest">
+				<methods>
+
+					<include name="verifyClickOnAddNewButtonTest"/>
+				</methods>
+			</class>
+		</classes>
+	</test> 
+</suite> 
